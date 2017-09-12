@@ -37,7 +37,7 @@ if __name__ == "__main__":
         
     for trial in range(len(grand_average)):    
 
-        F,Pxx[:,trial]=welch(grand_average[trial,:],fs=grand_average.shape[1]/epoch_time, noverlap=32,window='hamming')
+        F,Pxx[:,trial]=welch(grand_average[trial,:],fs=grand_average.shape[1]/epoch_time, window='hamming')
 
    
     
